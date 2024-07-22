@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FEFDFF">
+
+
+    <TextView
+        android:id="@+id/textViewViewerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flashcard Viewer"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#30292F"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFlashcards"
+        android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#FEFDFF" />
+
+    <Button
+        android:id="@+id/btnStudy"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#5F5AA2"
+    android:backgroundTint="#5F5AA2"
+    android:text="Study"
+    android:textColor="@android:color/white"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp" />
+</LinearLayout>
